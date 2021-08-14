@@ -35,25 +35,38 @@ body {
 }
 
 .control-panel {
+    /*align-items: center;*/
     align-self: center;
     background-color: dimgray;
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 300px;
     margin: auto;
     width: 300px;
 }
 
 .check-buttons {
-    justify-content: center;
-}
-
-#control-panel-top {
+    clear: both;
     display: flex;
     justify-content: center;
-    margin: 10px 0;
 }
 
-#control-panel-top input {
-    margin: 0 10px;
+.check-buttons input[type="checkbox"] {
+    margin: 10px 15px;
+}
+
+.levers {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+
+.levers input[type="range"] {
+    margin: -40px;
+    transform: rotate(-90deg);
+}
+
+.control-panel input {
+    float: left;
+    margin: 10px;
 }
