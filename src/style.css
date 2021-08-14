@@ -1,29 +1,59 @@
 body {
     background-color: black;
+    position: relative;
 }
 
 .space {
     background-image: url("../res/space.png");
+    display: flex;
     height: 97vh;
     margin: auto;
+    position: relative;
     width: 80%;
 }
 
 .planet-area {
+    bottom: 0;
+    position: relative;
     width: 40%;
 }
 
 .planet {
     bottom: -250px;
-    left: -2px;
+    left: -5px;
+    overflow: hidden;
     position: relative;
     width: 100%;
 }
 
 .rocket {
-    position: relative;
-    left: 250px;
     bottom: 190px;
+    left: 250px;
+    position: relative;
     transform: rotateZ(30deg);
     width: 40%;
+}
+
+.control-panel {
+    align-self: center;
+    background-color: dimgray;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin: auto;
+    width: 300px;
+}
+
+.check-buttons {
+    justify-content: center;
+}
+
+#control-panel-top {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#control-panel-top input {
+    margin: 0 10px;
 }
