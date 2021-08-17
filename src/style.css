@@ -105,4 +105,25 @@ body {
     border-radius: 50%;
     color: white;
     height: 50px;
+    transition: opacity 1s ease;
+}
+
+#launch-btn:disabled {
+    opacity: 20%;
+}
+
+.rocket-anim {
+    animation-name: launch-rocket;
+    animation-duration: 3s;
+}
+
+@keyframes launch-rocket {
+    from {
+        bottom: 190px;
+        left: 250px;
+    }
+    to {
+        bottom: 900px;
+        left: 500px;
+    }
 }
