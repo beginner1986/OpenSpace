@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Open Space</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="space">
@@ -14,27 +15,27 @@
 
         <div class="control-panel">
             <div class="control-panel__inner">
-                <input type="password" placeholder="Enter password to unlock">
-                <input type="button" value="OK" id="ok-btn">
+                <input type="password" placeholder="Enter password to unlock" id="passwd">
+                <input type="button" value="OK" id="ok-btn" onclick="checkPassword()">
 
                 <div class="check-buttons">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
-                    <input type="checkbox">
+                    <input type="checkbox" disabled>
+                    <input type="checkbox" disabled>
+                    <input type="checkbox" disabled>
+                    <input type="checkbox" disabled>
+                    <input type="checkbox" disabled>
+                    <input type="checkbox" disabled>
                 </div>
 
                 <div class="levers">
-                    <input type="range">
-                    <input type="range">
-                    <input type="range">
-                    <input type="range">
-                    <input type="range">
+                    <input type="range" disabled>
+                    <input type="range" disabled>
+                    <input type="range" disabled>
+                    <input type="range" disabled>
+                    <input type="range" disabled>
                 </div>
 
-                <input type="button" value="Launch" id="launch-btn">
+                <input type="button" value="Launch" id="launch-btn" disabled>
             </div>
         </div>
     </div>
