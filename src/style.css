@@ -35,12 +35,22 @@ body {
 }
 
 .control-panel {
+    align-items: center;
+    background: repeating-linear-gradient(
+            45deg, black, black 10px, yellow, yellow 10px, yellow 20px);
+    border-radius: 20px;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    margin: auto;
+    width: 320px;
+}
+
+.control-panel__inner {
     background-color: dimgray;
-    border: 5px solid black;
     border-radius: 20px;
     display: block;
-    height: 250px;
-    margin: auto;
+    height: 280px;
     text-align: center;
     width: 300px;
 }
@@ -69,4 +79,30 @@ body {
 .levers input[type="range"] {
     margin: -40px;
     transform: rotate(-90deg);
+}
+
+.control-panel__inner input[type="password"] {
+    background-color: dimgray;
+    border: yellow 2px solid;
+    border-radius: 5px;
+    color: white;
+}
+
+.control-panel__inner input[type="password"]::placeholder {
+    color: white;
+}
+
+#ok-btn {
+    background-color: yellow;
+    border: black 2px solid;
+    border-radius: 5px;
+    color: black;
+}
+
+#launch-btn {
+    background-color: red;
+    border: white 2px solid;
+    border-radius: 50%;
+    color: white;
+    height: 50px;
 }
